@@ -3,7 +3,9 @@
     using Bal.Bookmark.Domain;
     using Bal.Bookmark.Helpers;
 
-    using System;
+    using Microsoft.VisualBasic;
+    using Microsoft.VisualBasic.CompilerServices;
+
     using System.IO;
     using System.Linq;
     using System.Xml.Serialization;
@@ -35,7 +37,7 @@
 
             if (!string.IsNullOrEmpty(this.Alias))
             {
-                collection.Bookmarks = collection.Bookmarks.Where(b => string.Equals(b.Alias, this.Alias, StringComparison.OrdinalIgnoreCase)).ToList();
+                collection.Bookmarks = collection.Bookmarks.Where(b => LikeOperator.LikeString(b.Alias, this.Alias, CompareMethod.Text)).ToList();
             }
 
             this.WriteObject(collection.Bookmarks);

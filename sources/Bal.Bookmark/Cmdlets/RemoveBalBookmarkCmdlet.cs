@@ -1,10 +1,11 @@
-﻿using System.Linq;
-
-namespace Bal.Bookmark.Cmdlets
+﻿namespace Bal.Bookmark.Cmdlets
 {
-    using System;
+    using System.Linq;
     using System.IO;
     using System.Management.Automation;
+
+    using Microsoft.VisualBasic;
+    using Microsoft.VisualBasic.CompilerServices;
 
     using Bal.Bookmark.Domain;
     using Bal.Bookmark.Helpers;
@@ -28,7 +29,7 @@ namespace Bal.Bookmark.Cmdlets
 
             foreach (string alias in items)
             {
-                collection.Bookmarks.RemoveAll(b => string.Equals(alias, b.Alias, StringComparison.OrdinalIgnoreCase));
+                collection.Bookmarks.RemoveAll(b => LikeOperator.LikeString(alias, b.Alias, CompareMethod.Text));
             }
 
             ImmediateXmlSerializer.Serialize(file, collection);
