@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bal.Bookmark", "sources\Bal.Bookmark\Bal.Bookmark.csproj", "{6964A58D-9D06-4A4E-AD4C-C5DBDC07D738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6964A58D-9D06-4A4E-AD4C-C5DBDC07D738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6964A58D-9D06-4A4E-AD4C-C5DBDC07D738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6964A58D-9D06-4A4E-AD4C-C5DBDC07D738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6964A58D-9D06-4A4E-AD4C-C5DBDC07D738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFB76BCA-8F7E-4D50-B66A-58B0D2CE566A}
+	EndGlobalSection
+EndGlobal
