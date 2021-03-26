@@ -11,9 +11,16 @@ cd C:\repos\dev
 mark dev
 ```
 
-## Getting all bookmarks
+## Getting bookmarks
 ```powershell
 Get-BalBookmark
+
+Alias Path
+----- ----
+dev   C:\repos\dev
+
+# With like operator
+Get-BalBookmark -Alias "de*"
 
 Alias Path
 ----- ----
